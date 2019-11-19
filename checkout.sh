@@ -9,4 +9,5 @@ svn checkout ${URL} ${OURPUT_PATH} \
     --username ${USERNAME} \
     --password ${PASSWORD} \
     --no-auth-cache \
-    --non-interactive
+    --non-interactive \
+    --trust-server-cert-failures=unknown-ca,cn-mismatch,expired,not-yet-valid,other
